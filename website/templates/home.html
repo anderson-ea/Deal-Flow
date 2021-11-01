@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h1 class="leadhead">Leads</h1>
+</br>
+<div>
+    <table class="datatable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Source</th>
+                <th>Model of Interest</th>
+                <th>Phone No</th>
+                <th>Last Attempt</th>
+                <th>Stage</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+            <tr>
+                {% for cell in row[:8] %}
+                    {% if loop.index == 2 %}
+                    <td><a href="leads/{{ cell }}">{{ cell }}</a></td>
+                    {% else %}
+                    <td>{{ cell }}</td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <div class="adddiv">
+        <button type="submit" class="button2">Add Lead</button>
+    </div>
+</div>
+{% endblock %}

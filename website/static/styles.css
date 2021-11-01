@@ -1,0 +1,184 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 3%;
+    background-color: royalblue;
+    min-width: 500px;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+li a {
+    list-style-type: none;
+    font-size: 22px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.baseh1 {
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.leadhead {
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hrline {
+    color: royalblue;
+    height: 3px;
+    background-color: royalblue;
+    min-width: 530px;
+}
+
+.logout-page {
+    font-size: 24px;
+    padding: 10px 3%;
+}
+
+.signup-page {
+    padding: 10px 3%;
+}
+
+.signdiv {
+    display: block;
+    padding-top: 11px;
+    font-size: 22px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+    min-width: 775px;
+}
+
+.signup-labels {
+    width: 180px;
+    display: inline-block;
+}
+
+.input-container {
+    display: inline-block;
+    min-width: 500px;
+}
+
+.signup-input {
+    border: 1px solid;
+    font-size: 24px;
+    min-width: 338px;
+    border-radius: 3px;
+}
+
+.butdiv {
+    padding-top: 10px;
+    min-width: 90px;
+    padding-left: 440px;
+}
+
+.button {
+    background: #8ab4f8;
+    border-radius: 2px;
+    border: 1px solid royalblue;
+    color: #202124;
+    font-size: 20px;
+    font-weight: bold;
+    height: 32px;
+    width: 90px;
+}
+
+.button:hover {
+    cursor: pointer;
+    border: 0px;
+}
+
+.alert {
+    position: relative;
+    padding: 0.75rem 3%;
+    margin-bottom: 1rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.datatable {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 900px;
+}
+
+table, th {
+    border: 2px solid royalblue;
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+tr, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+tr:hover {
+    background-color: lightgray;
+}
+
+th {
+    background-color: #8ab4f8;
+}
+
+.adddiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 912px;
+    padding-top: 15px;
+}
+
+.button2 {
+    background: #8ab4f8;
+    border-radius: 2px;
+    border: 1px solid royalblue;
+    color: #202124;
+    font-size: 14px;
+    font-weight: bold;
+    height: 32px;
+    width: 90px;
+    float: right;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode'
+}
+
+.button2:hover {
+    cursor: pointer;
+    border: 0px;
+}

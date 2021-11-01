@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<div class="signup-page">
+    <form method="POST">
+        <div class=signup-div>
+            <h1 class="baseh1">Login</h1>
+            <hr class="hrline">
+            <div class="signdiv">
+                <div class="signup-labels">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="input-container">
+                    <input class="signup-input" type="email" id="email" name="email" 
+                        placeholder="Enter Email">
+                </div>
+            </div>
+            <div class="signdiv">
+                <div class="signup-labels">
+                    <label for="password">Password:</label>
+                </div>
+                <div class="input-container">
+                    <input class="signup-input" type="password" id="password" name="password" 
+                        placeholder="Enter Password">
+                </div>
+            </div>
+            <div class="signdiv">
+                <div class="butdiv">
+                    <button type="submit" class="button">Login</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

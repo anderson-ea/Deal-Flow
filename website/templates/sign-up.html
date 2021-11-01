@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}Sign Up{% endblock %}
+{% block content %}
+<div class="signup-page">
+    <form method="POST">
+        <div class=signup-div>
+            <h1 class="baseh1">Sign Up</h1>
+            <hr class="hrline">
+            <div class="signdiv">
+                <div class="signup-labels">
+                    <label for="name">Full Name:</label>
+                </div>
+                <div class="input-container">
+                    <input class="signup-input" type="text" id="name" name="name" 
+                        placeholder="Enter Full Name">
+                </div>
+            </div>
+            <div class="signdiv">
+                <div class="signup-labels">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="input-container">
+                    <input class="signup-input" type="email" id="email" name="email" 
+                        placeholder="Enter Email">
+                </div>
+            </div>
+            <div class="signdiv">
+                <div class="signup-labels">
+                    <label for="password1">Password:</label>
+                </div>
+                <div class="input-container">
+                    <input class="signup-input" type="password" id="password1" name="password1" 
+                        placeholder="Enter Password">
+                </div>
+            </div>
+            <div class="signdiv">
+                <div class="signup-labels">
+                    <label for="password2">Confirm:</label>
+                </div>
+                <div class="input-container">
+                    <input class="signup-input" type="password" id="password2" name="password2" 
+                        placeholder="Confirm Password">
+                </div>
+            </div>
+            <div class="signdiv">
+                <div class="butdiv">
+                    <button type="submit" class="button">Submit</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}
