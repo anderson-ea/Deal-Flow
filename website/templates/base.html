@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="../static/images/logo.png" alt="logo">
+        <nav>
+            <ul class="nav-links">
+                {% if user.is_authenticated %}
+                <li class="right-link"><a href="logout">Logout</a></li>
+                {% else %}
+                <li class="right-link"><a href="sign-up">Sign Up</a></li>
+                <li class="right-link"><a href="login">Login</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+    {% with messages = get_flashed_messages(with_categories=true) %} {% if
+    messages %} {% for category, message in messages %} {% if category ==
+    'error' %}
+    <div class="alert alert-danger" role="alert">
+        {{ message }}
+    </div>
+    {% else %}
+    <div class="alert alert-success" role="alert">
+        {{ message }}
+    </div>
+    {% endif %} {% endfor %} {% endif %} {% endwith %}
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
