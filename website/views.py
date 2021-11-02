@@ -7,10 +7,7 @@ views = Blueprint('views', __name__)
 @views.route('/')
 @login_required
 def home():
-    my_user = str(current_user.id)
-    exc_string = "SELECT * FROM lead WHERE user_id='"+ my_user +"'"
-    data = db.engine.execute(exc_string)
-    return render_template('home.html', user=current_user, data=data)
+    return render_template('home.html', user=current_user)
 
 @views.route('/leads/<id>', methods=['GET', 'POST'])
 def leads(id):
