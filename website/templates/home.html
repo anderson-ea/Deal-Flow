@@ -18,15 +18,16 @@
             </tr>
         </thead>
         <tbody>
-            {% for row in data %}
             <tr>
-                {% for cell in row[:8] %}
-                    {% if loop.index == 2 %}
-                    <td><a href="leads/{{ cell }}">{{ cell }}</a></td>
-                    {% else %}
-                    <td>{{ cell }}</td>
-                    {% endif %}
-                {% endfor %}
+                {% for lead in user.leads %}
+                    <td>{{ lead.id }}</a></td>
+                    <td><a href="leads/{{ lead.id }}">{{ lead.name }}</a></td>
+                    <td>{{ lead.email }}</a></td>
+                    <td>{{ lead.source }}</a></td>
+                    <td>{{ lead.model }}</a></td>
+                    <td>{{ lead.phone }}</a></td>
+                    <td>{{ lead.last }}</a></td>
+                    <td>{{ lead.stage }}</a></td>
             </tr>
             {% endfor %}
         </tbody>
