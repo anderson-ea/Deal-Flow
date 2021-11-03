@@ -45,6 +45,8 @@ li a:hover {
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
+    min-width: 900px;
+    max-width: 965px;
 }
 
 .hrline {
@@ -160,7 +162,8 @@ th {
 .adddiv {
     margin-left: auto;
     margin-right: auto;
-    width: 912px;
+    min-width: 900px;
+    max-width: 965px;
     padding-top: 15px;
 }
 
@@ -233,24 +236,6 @@ th {
     margin: 20px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.button2 {
-    background: #8ab4f8;
-    border-radius: 2px;
-    border: 1px solid royalblue;
-    color: #202124;
-    font-size: 20px;
-    font-weight: bold;
-    height: 32px;
-    width: 90px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.button2:hover {
-    cursor: pointer;
-    border: 0px;
 }
 
 .button3 {
