@@ -11,7 +11,8 @@
         <nav>
             <ul class="nav-links">
                 {% if user.is_authenticated %}
-                <li class="right-link"><a href="logout">Logout</a></li>
+                <li class="right-link"><a href="{{url_for('views.home')}}">Home</a></li>
+                <li class="right-link"><a href="{{url_for('auth.logout')}}">Logout</a></li>
                 {% else %}
                 <li class="right-link"><a href="sign-up">Sign Up</a></li>
                 <li class="right-link"><a href="login">Login</a></li>
