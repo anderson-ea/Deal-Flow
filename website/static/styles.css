@@ -213,6 +213,7 @@ th {
 
 .lead-div2 {
     width: 310px;
+    height: 23px;
     display: inline-block;
     border: solid gray 2px;
     border-radius: 2px;
