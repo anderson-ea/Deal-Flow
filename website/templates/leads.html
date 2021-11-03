@@ -1,7 +1,60 @@
 {% extends "base.html" %}
 {% block title %}Leads{% endblock %}
 {% block content %}
-<div class="lead-page">
-    <p>Test</p>
+<h1 class="leadhead">Lead Profile</h1>
+<div class="lead-container">
+</br>
+    <div class="lead-margin">
+        <label class="lead-div1">name:</label>
+        <div class="lead-div2">
+            {{ id.name}}
+        </div>
+    </div>
+    <div class="lead-margin">
+        <label class="lead-div1">email:</label>
+        <div class="lead-div2">
+            {{ id.email}}
+        </div>
+    </div>
+    <div class="lead-margin">
+        <label class="lead-div1">phone number:</label>
+        <div class="lead-div2">
+            {{ id.phone }}
+        </div>
+    </div>
+    <div class="lead-margin">
+        <label class="lead-div1">model of interest:</label>
+        <div class="lead-div2">
+            {{ id.model }}
+        </div>
+    </div>
+    <div class="lead-margin">
+        <label class="lead-div1">last contacted:</label>
+        <div class="lead-div2">
+            {{ id.last }}
+        </div>
+    </div>
+    <div class="lead-margin">
+        <label class="lead-div1">lead source:</label>
+        <div class="lead-div2">
+            {{ id.source }}
+        </div>
+    </div>
+    <div class="lead-margin">
+        <label class="lead-div1">stage:</label>
+        <div class="lead-div2">
+            {{ id.stage }}
+        </div>
+    </div>
+    <div class="lead-margin">
+        <label class="lead-div1">notes:</label>
+        <div class="lead-notes">
+            {{ id.notes }}
+        </div>
+    </div>
+    <div class="button-container">
+        <input class="button2" type="submit" value="Save">
+        <input class="button3" type="submit" value="Edit">
+    </div>
 </div>
 {% endblock %}
