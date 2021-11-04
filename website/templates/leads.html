@@ -4,57 +4,42 @@
 <h1 class="leadhead">Lead Profile</h1>
 <div class="lead-container">
 </br>
+<form method="POST">
     <div class="lead-margin">
         <label class="lead-div1">name:</label>
-        <div class="lead-div2">
-            {{ id.name}}
-        </div>
+        <textarea name="name" id="name" class="lead-div2" contenteditable="true">{{ id.name }}</textarea>
     </div>
     <div class="lead-margin">
         <label class="lead-div1">email:</label>
-        <div class="lead-div2">
-            {{ id.email}}
-        </div>
+        <textarea name="email" id="email" class="lead-div2" contenteditable="true">{{ id.email }}</textarea>
     </div>
     <div class="lead-margin">
         <label class="lead-div1">phone number:</label>
-        <div class="lead-div2">
-            {{ id.phone }}
-        </div>
+        <textarea name="phone" id="phone" class="lead-div2" contenteditable="true">{{ id.phone }}</textarea>
     </div>
     <div class="lead-margin">
         <label class="lead-div1">model of interest:</label>
-        <div class="lead-div2">
-            {{ id.model }}
-        </div>
+        <textarea name="model" id="model" class="lead-div2" contenteditable="true">{{ id.model }}</textarea>
     </div>
     <div class="lead-margin">
         <label class="lead-div1">last contacted:</label>
-        <div class="lead-div2">
-            {{ id.last }}
-        </div>
+        <textarea name="last" id="last" class="lead-div2" contenteditable="true">{{ id.last }}</textarea>
     </div>
     <div class="lead-margin">
         <label class="lead-div1">lead source:</label>
-        <div class="lead-div2">
-            {{ id.source }}
-        </div>
+        <textarea name="source" id="soruce" class="lead-div2" contenteditable="true">{{ id.source }}</textarea>
     </div>
     <div class="lead-margin">
         <label class="lead-div1">stage:</label>
-        <div class="lead-div2">
-            {{ id.stage }}
-        </div>
+        <textarea name="stage" id="stage" class="lead-div2" contenteditable="true">{{ id.stage }}</textarea>
     </div>
     <div class="lead-margin">
         <label class="lead-div1">notes:</label>
-        <div class="lead-notes">
-            {{ id.notes }}
-        </div>
+        <textarea name="note" id="note" class="lead-notes" contenteditable="true">{{ id.notes }}</textarea>
     </div>
     <div class="button-container">
-        <input class="button3" type="submit" value="Save">
-        <input class="button3" type="submit" value="Edit">
+        <button class="button3" type="submit">Save</button>
     </div>
+</form>
 </div>
 {% endblock %}
