@@ -159,14 +159,6 @@ th {
     background-color: #8ab4f8;
 }
 
-.adddiv {
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 900px;
-    max-width: 965px;
-    padding-top: 15px;
-}
-
 .button2 {
     background: #8ab4f8;
     border-radius: 2px;
@@ -176,8 +168,15 @@ th {
     font-weight: bold;
     height: 32px;
     width: 90px;
-    float: right;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.table-button {
+    border: none;
+}
+
+.table-button:hover {
+    background-color: white;
 }
 
 .button2:hover {
@@ -212,28 +211,44 @@ th {
 }
 
 .lead-div2 {
-    width: 310px;
-    height: 23px;
+    min-width: 310px;
+    min-height: 23px;
+    max-width: 310px;
+    max-height: 23px;
     display: inline-block;
     border: solid gray 2px;
     border-radius: 2px;
     font-size: 17px;
     padding: 3px;
     background-color: white;
+    font-family: Helvetica, sans-serif, Arial;
 }
 
 .lead-notes {
-    width: 800px;
     display: inline-block;
     border: solid gray 2px;
     background-color: white;
     border-radius: 2px;
     padding: 2px;
-    height: 200px;
+    min-width: 800px;
+    min-height: 200px;
+    max-width: 800px;
+    max-height: 200px;
+    font-size: 17px;
+    font-family: Helvetica, sans-serif, Arial;
+}
+
+.note {
+    font-size: 17px;
+    font-family: Helvetica, sans-serif, Arial;
+    min-width: 800px;
+    min-height: 200px;
+    max-width: 800px;
+    max-height: 200px;
 }
 
 .button-container {
-    width: 210px;
+    width: 90px;
     margin: 20px;
     margin-left: auto;
     margin-right: auto;
