@@ -30,7 +30,9 @@
                     <td>{{ lead.stage }}</a></td>
             </tr>
             {% endfor %}
-            <tr class="table-foot"><td class="table-button"><input type="submit" class="button2" value="Add lead"></td></tr>
+            <form method="POST">
+                <tr class="table-foot"><td class="table-button"><input type="submit" class="button2" value="Add lead"></td></tr>
+            </form>
         </tbody>
     </table>
 </div>
