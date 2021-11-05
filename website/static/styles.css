@@ -139,7 +139,7 @@ li a:hover {
     min-width: 900px;
 }
 
-table, th {
+th {
     border: 2px solid royalblue;
     border-collapse: collapse;
     padding: 15px;
@@ -173,6 +173,7 @@ th {
 
 .table-button {
     border: none;
+    padding: 0px;
 }
 
 .table-button:hover {
@@ -248,8 +249,8 @@ th {
 }
 
 .button-container {
-    width: 90px;
-    margin: 20px;
+    width: 220px;
+    margin: 10px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -263,11 +264,14 @@ th {
     font-weight: bold;
     height: 32px;
     width: 90px;
-    margin-left: auto;
-    margin-right: auto;
+    display: inline;
 }
 
 .button3:hover {
     cursor: pointer;
     border: 0px;
+}
+
+.table-foot {
+    border: none;
 }
