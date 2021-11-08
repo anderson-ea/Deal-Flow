@@ -9,7 +9,7 @@ views = Blueprint('views', __name__)
 @views.route('/', methods=['GET', 'POST'])
 @login_required
 def home():
-    new_lead = Lead(user_id=current_user)
+    new_lead = Lead(user_id=current_user.id)
     if request.method == 'POST':
         db.session.add(new_lead)
         db.session.commit()
