@@ -251,8 +251,9 @@ th {
 .button-container {
     width: 220px;
     margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 32px;
+    display: inline;
+    margin-left: 40%;
 }
 
 .button3 {
@@ -265,6 +266,7 @@ th {
     height: 32px;
     width: 90px;
     display: inline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .button3:hover {
@@ -274,4 +276,24 @@ th {
 
 .table-foot {
     border: none;
+}
+
+.delete-button {
+    background: #f88a8a;
+    border-radius: 2px;
+    border: 1px solid red;
+    color: #202124;
+    font-size: 20px;
+    font-weight: bold;
+    height: 32px;
+    width: 90px;
+    display: inline;
+    text-decoration: none;
+    padding: 4px 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.delete-button:hover {
+    cursor: pointer;
+    border: 0px;
 }
