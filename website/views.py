@@ -11,7 +11,7 @@ views = Blueprint('views', __name__)
 def home():
     new_lead = Lead(user_id=current_user.id)
     if request.method == 'POST':
-        db.session.add(new_lead)
+        db.session.add(new_lead, remember=True)
         db.session.commit()
         flash('New Lead Added.', category="success")
     return render_template('home.html', user=current_user)
