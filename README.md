@@ -23,4 +23,4 @@ Stay on top of leads with notes and additional information.
 - Flask
 - HTML
 - CSS
-- SQL
+- SQLAlchemy
