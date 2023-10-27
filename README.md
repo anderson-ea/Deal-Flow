@@ -1,6 +1,6 @@
 # Deal-Flow
 Deal Flow is a sales CRM used to track and store information on sales leads such as phone number, email, notes, etc. <br />
-This is my first full stack project, hosted on Heroku. https://deal-flow-crm.herokuapp.com/sign-up <br />
+This is my first full stack project, hosted on Heroku. *UPDATE - DEPRECATED HOSTING SINCE OCTOBER 2023 <br />
 Gmail parsing was taken out because it requires an SSL certificate.<br />
 
 ## Sign Up
